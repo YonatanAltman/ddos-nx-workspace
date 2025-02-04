@@ -1,0 +1,14 @@
+<div style="margin-bottom: 20px;">
+  <!-- Button to load the countries -->
+  <button (click)="loadCountries()">Load Countries</button>
+</div>
+
+<!-- ag-Grid table -->
+<div class="ag-theme-alpine" style="width: 100%; height: 600px;">
+  <ag-grid-angular
+    [rowData]="rowData"
+    [columnDefs]="columnDefs"
+    [rowHeight]="50"
+    domLayout="autoHeight">
+  </ag-grid-angular>
+</div>
