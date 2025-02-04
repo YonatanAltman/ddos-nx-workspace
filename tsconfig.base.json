@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@ddos-workspace/category": ["libs/category/src/index.ts"],
+      "@ddos-workspace/data-access": ["libs/data-access/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

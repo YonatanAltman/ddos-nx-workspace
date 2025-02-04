@@ -8,8 +8,10 @@ import { ClientSideRowModelModule } from "ag-grid-community";
 // Correct AG Grid CSS imports (no node_modules prefix)
 import "ag-grid-community/styles/ag-grid.css";
 import "ag-grid-community/styles/ag-theme-alpine.css";
+import { User } from '@ddos-workspace/data-access';
 
 export function Countries() {
+  const user:User = {} as any;
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const [search, setSearch] = useState("");

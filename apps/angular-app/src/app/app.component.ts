@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CountriesPageComponent } from './countries-page/countries-page.component';
+import { User } from '@ddos-workspace/data-access';
 
 @Component({
   imports: [RouterModule, CountriesPageComponent],
@@ -10,4 +11,5 @@ import { CountriesPageComponent } from './countries-page/countries-page.componen
 })
 export class AppComponent {
   title = 'angular-app';
+  user?: User;
 }
